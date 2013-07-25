@@ -1,15 +1,15 @@
 %define upstream_name    Wx-Scintilla
-%define upstream_version 0.36
+%define upstream_version 0.39
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Version:	%perl_convert_version 0.39
 Release:	1
 
 Summary:	A list of Wx::Scintilla constants
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Wx/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Wx/Wx-Scintilla-0.39.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Alien::wxWidgets)
@@ -55,4 +55,5 @@ perl Build.PL installdirs=vendor
 %doc Changes META.json META.yml MYMETA.yml README XS
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
