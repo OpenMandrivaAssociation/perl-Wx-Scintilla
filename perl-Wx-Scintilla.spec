@@ -9,7 +9,7 @@ Summary:	A list of Wx::Scintilla constants
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Wx/Wx-Scintilla-0.39.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Wx/Wx-Scintilla-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Alien::wxWidgets)
