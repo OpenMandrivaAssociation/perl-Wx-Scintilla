@@ -1,15 +1,13 @@
 %define upstream_name    Wx-Scintilla
-%define upstream_version 0.39
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Version:	0.39
+Release:	2
 
 Summary:	A list of Wx::Scintilla constants
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Wx/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Wx/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Alien::wxWidgets)
@@ -38,7 +36,7 @@ They are mutually exclusive. The wxSTC_... events are handled by one
 library or the other.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
